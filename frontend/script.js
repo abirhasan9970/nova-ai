@@ -5,7 +5,7 @@ const welcomeScreen = document.getElementById('welcome-screen');
 const newChatBtn = document.getElementById('new-chat-btn');
 const clearChatBtn = document.getElementById('clear-chat-btn');
 
-const API_URL = 'http://127.0.0.1:8000/api/chat';
+const API_URL = 'https://nova-ai-pdt6.onrender.com/api/chat';
 let sessionId = localStorage.getItem('nova_session_id') || null;
 
 messageInput.addEventListener('input', function() {
