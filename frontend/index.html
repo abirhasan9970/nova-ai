@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA AI - Smart Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="orb-small"></div>
+                <span>NOVA AI</span>
+            </div>
+            <button id="new-chat-btn" class="new-chat-btn">
+                <span>+</span> নতুন চ্যাট
+            </button>
+            <div class="recent-chats">
+                <p class="section-title">সাম্প্রতিক</p>
+                <div class="chat-item">কোডিং সাহায্য</div>
+                <div class="chat-item">আইডিয়া জেনারেট</div>
+                <div class="chat-item">ডেটা অ্যানালাইসিস</div>
+            </div>
+        </aside>
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="status">
+                    <div class="status-dot"></div> NOVA AI অনলাইন
+                </div>
+                <button id="clear-chat-btn" class="clear-btn">চ্যাট মুছুন</button>
+            </header>
+            <div class="chat-messages" id="chat-messages">
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="orb-large"></div>
+                    <h1>আমি NOVA AI</h1>
+                    <p>আমি কীভাবে তোমাকে আজ সাহায্য করতে পারি?</p>
+                    <div class="quick-prompts">
+                        <button class="prompt-btn">একটা টপিক ব্যাখ্যা করো</button>
+                        <button class="prompt-btn">কোড লিখে দাও</button>
+                        <button class="prompt-btn">একটা আইডিয়া দাও</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <textarea id="message-input" placeholder="NOVA AI-কে কিছু জিজ্ঞাসা করো..." rows="1"></textarea>
+                    <button id="send-btn" class="send-btn">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+                <p class="footer-text">NOVA AI ভুল করতে পারে। তাই তথ্য যাচাই করে নিন।</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
